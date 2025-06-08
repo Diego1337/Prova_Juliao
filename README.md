@@ -22,7 +22,11 @@ sudo apt upgrade
 
 sudo apt install mysql-server -y
 sudo apt install git -y
-sudo apt install python3.13 python3.13-venv python3.13-pip -y
+sudo apt install python3.13 
+
+###crie um ambiente virtual para instalar a bibliotecas: 
+python3 -m venv myenv
+source myenv/bin/activate
 pip install streamlit pandas plotly
 
 # 4. Clonar o Repositório do Projeto
