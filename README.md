@@ -18,7 +18,7 @@ sudo apt update
 sudo apt upgrade 
 
 # 3. Instalar Dependências
-##Instale as principais ferramentas necessárias:
+## Instale as principais ferramentas necessárias:
 
 sudo apt install mysql-server -y
 sudo apt install git -y
@@ -26,7 +26,7 @@ sudo apt install python3.13 python3.13-venv python3.13-pip -y
 pip install streamlit pandas plotly
 
 # 4. Clonar o Repositório do Projeto
-##Baixe o código diretamente do GitHub:
+## Baixe o código diretamente do GitHub:
 
 cd ~
 git clone https://github.com/Diego1337/Prova_Juliao.git
