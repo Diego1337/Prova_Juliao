@@ -103,9 +103,9 @@ source myenv/bin/activate
 pip install --upgrade pip
 pip install streamlit pandas plotly
 
-## Configurar segurança na EC2 (porta 8501)
-## Vá até AWS -> EC2 -> Grupo de Segurança -> Adicione regra de entrada
-## Tipo: TCP personalizado | Porta: 8501 | Origem: Qualquer IPv4 (0.0.0.0/0)
+### Configurar segurança na EC2 (porta 8501)
+### Vá até AWS -> EC2 -> Grupo de Segurança -> Adicione regra de entrada
+### Tipo: TCP personalizado | Porta: 8501 | Origem: Qualquer IPv4 (0.0.0.0/0)
 
 ## Executar aplicação
 streamlit run main.py
