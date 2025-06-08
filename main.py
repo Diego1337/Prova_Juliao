@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-df = pd.read_csv('MS_Financial Sample.csv', sep=',')
+df = pd.read_csv('MS_Financial Sample.csv', sep=';')
 
 st.set_page_config(page_title="Dashboard - Prova do Julio",
                     layout="wide",
