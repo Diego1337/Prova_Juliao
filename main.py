@@ -4,13 +4,13 @@ import plotly.express as px
 
 df = pd.read_csv('MS_Financial Sample.csv', sep=';')
 
+df.columns = df.columns.str.strip()
+
 df['Sales'] = (df['Sales']
                .str.replace('$', '', regex=False)
                .str.replace('.', '', regex=False)
                .str.replace(',', '.', regex=False)
                .astype(float))
-
-df.columns = df.columns.str.strip()
 
 st.set_page_config(page_title="Dashboard - Prova do Julio",
                     layout="wide",
@@ -18,9 +18,9 @@ st.set_page_config(page_title="Dashboard - Prova do Julio",
 
 st.title("DASHBOARD - Prova do Julião :globe_with_meridians:")
 
-grafico = ["Country","Sales"]
+grafico = ["Country", "Sales"]
 
-fig_bar = px.bar(df,x="Country",y="Sales",title="Vendas por Pais")
+fig_bar = px.bar(df,x="Country",y= "Sales",title="Vendas por Pais")
 
 # definimos a altura
 fig_bar.update_layout(
